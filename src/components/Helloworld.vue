@@ -12,19 +12,24 @@
     <h2>employment-work options</h2>
 <form name="contact" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
+    <label>Your Name: <input type="text" name="name" size="50" /></label>   
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+    <label>Your Email: <input type="email" name="email" size="50" /></label>
   </p>
   <p>
     <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
+      <option value="entry-level">entry level</option>
+      <option value="sales">sales</option>
+      <option value="software">software</option>
+      <option value="hardware">hardware</option>
+      <option value="manufacturing">manufacturing</option>
+      <option value="construction">construction</option>
+      <option value="other">other</option>
     </select></label>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label>Message: <textarea name="message" rows="8" columns=10></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
@@ -32,7 +37,6 @@
 </form>
   </div>
 </template>
-
 <script>
 export default {
   name: 'HelloWorld',
@@ -42,20 +46,3 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
